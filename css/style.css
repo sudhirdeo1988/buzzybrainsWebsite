@@ -6396,19 +6396,14 @@ blockquote::before {
   -ms-transform: translateY(-15px);
   transform: translateY(-15px);
 }
-.info-card:hover .info-card-header > img {
-  -webkit-transform: rotateY(360deg);
-  transform: rotateY(360deg);
-}
 .info-card .info-card-header {
   margin-bottom: 20px;
 }
 .info-card .info-card-header > img {
-  -webkit-transition: all 0.4s ease;
-  -o-transition: all 0.4s ease;
-  transition: all 0.4s ease;
-  -webkit-transform: rotateY(0deg);
-  transform: rotateY(0deg);
+  height: 100px;
+  width: 100px;
+  display: block;
+  margin: 0 auto;
 }
 .info-card .info-card-body .card-title {
   color: #103dbe;
