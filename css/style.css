@@ -9901,13 +9901,15 @@ input[type="number"] {
   flex: 0;
 }
 .c-modal .modal-body .close {
+  color: #999;
+  font-size: 35px;
   position: absolute;
   top: -50px;
   right: 50px;
 }
 .c-modal .modal-content {
   border: 0;
-  background-color: #f9f9f9;
+  background: #f9f9f9 url('../images/SVG/bg-column.svg') right center no-repeat;
   justify-content: center;
   border-radius: 0;
 }
@@ -9926,28 +9928,83 @@ input[type="number"] {
   letter-spacing: 0.5px;
   margin-bottom: 25px;
 }
+.c-Modalform .form-group {
+  margin-bottom: 30px;
+}
 .c-Modalform .form-group label {
   display: block;
-  font-size: 13px;
-  font-weight: 600;
-  color: #b3b3b3;
+  color: #000;
   margin-bottom: 8px;
+  color: #1d202a;
+  font-size: 18px;
+  font-weight: 400;
 }
 .c-Modalform .form-control {
-  padding: 10px;
-  border: 1px solid #eaeaea;
+  padding: 10px 0;
+  border: 0;
+  border-bottom: 1px solid #eaeaea;
   display: block;
   border-radius: 0;
+  transition: all ease 0.3s;
+}
+.c-Modalform .form-control:focus {
+  border-bottom-color: #ff6c03;
+}
+.c-Modalform .form-control::placeholder {
+  color: #1d202a;
+  font-size: 18px;
+  font-weight: 400;
+}
+.c-Modalform .btn-primary {
+  width: 100%;
+}
+.custom-file-input {
+  opacity: 1;
+  color: transparent;
+}
+.custom-file-input::-webkit-file-upload-button {
+  visibility: hidden;
+}
+.custom-file-input::before {
+  content: "Attach files";
+  color: #000;
+  background-color: transparent;
+  border: 0;
+  padding: 0;
+  outline: none;
+  white-space: nowrap;
+  -webkit-user-select: none;
+  cursor: pointer;
+  font-weight: 500;
+  font-size: 14px;
+  float: right;
+}
+.custom-file-input:hover::before {
+  border-color: black;
+}
+.custom-file-input:active {
+  outline: 0;
+}
+.custom-file-input:active::before {
+  background: -webkit-linear-gradient(top, #e3e3e3, #f9f9f9);
+}
+.c-Modalform .c-custCheck .form-check-label{
+  display: inline-block;
+  color: #282d3b;
+  font-size: 16px;
+  line-height: 25px;
+  margin-left: 5px;
 }
 .c-modal .c-quotes {
   display: block;
   width: 375px;
-  padding: 10px;
+  padding: 10px 10px 10px 50px;
+  margin-top: 70px;
 }
 .c-modal .c-quotes .quote_dtls {
   position: relative;
-  padding: 0 0 0 50px;
-  min-height: 50px;
+  padding: 0 0 0 60px;
+  min-height: 60px;
   margin-bottom: 30px;
   color: #383d4c;
   font-size: 16px;
@@ -9957,10 +10014,8 @@ input[type="number"] {
   position: absolute;
   top: 0;
   left: 0;
-  height: 30px;
-  width: 30px;
-  font-size: 30px;
-  color: #999;
+  height: 40px;
+  width: 40px;
 }
 
 @media (max-width: 768px) {
@@ -9994,7 +10049,7 @@ input[type="number"] {
   right: -50px;
 }
 
-.portSection{
+.portSection {
   display: flex;
   flex: 0;
   justify-content: center;
@@ -10007,4 +10062,64 @@ input[type="number"] {
   font-size: 34px;
   line-height: 40px;
   margin-bottom: 35px;
+}
+.single-service.autoHeight{height: auto !important;}
+
+.materialGroup{position: relative;   margin-bottom:45px;}
+.materialGroup input 				{
+  font-size:18px;
+  padding:10px  0;
+  display:block;
+  width:100%;
+  border:none;
+  border-bottom:1px solid #eaeaea;
+}
+.materialGroup input:focus 		{ outline:none; }
+
+/* LABEL ======================================= */
+.materialGroup label 				 {
+  color:#1d202a;
+  font-size:18px;
+  font-weight:normal;
+  position:absolute;
+  pointer-events:none;
+  left:0;
+  top:10px;
+  transition:0.2s ease all;
+  -moz-transition:0.2s ease all;
+  -webkit-transition:0.2s ease all;
+}
+
+/* active state */
+.materialGroup input:focus ~ label 		{
+  top:-10px;
+  font-size:14px;
+  color:#1d202a;
+}
+
+/* BOTTOM BARS ================================= */
+.materialGroup .bar 	{ position:relative; display:block; width:100%; }
+.materialGroup .bar:before,
+.materialGroup .bar:after 	{
+  content:'';
+  height:2px;
+  width:0;
+  bottom:1px;
+  position:absolute;
+  background:#ff6c03;
+  transition:0.2s ease all;
+  -moz-transition:0.2s ease all;
+  -webkit-transition:0.2s ease all;
+}
+.materialGroup .bar:before {
+  left:50%;
+}
+.materialGroup .bar:after {
+  right:50%;
+}
+
+/* active state */
+.materialGroup input:focus ~ .bar:before,
+.materialGroup input:focus ~ .bar:after {
+  width:50%;
 }

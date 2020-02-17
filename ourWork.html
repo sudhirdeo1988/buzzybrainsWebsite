@@ -114,12 +114,45 @@
     </div>
     <!-- header section End -->
 
+    <section
+    class="xs-banner agency-banner7 sm"
+    id="homes"
+    data-scrollax-parent="true"
+  >
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-6">
+          <div class="agency-banner-content banner-style7">
+            <h2 class="c-headingTitle lg">Our Work</h2>
+            <div class="border-animation">
+              <span class="first"></span>
+              <span class="second"></span>
+            </div>
+          </div>
+          <!-- .agency-banner-content END -->
+        </div>
+      </div>
+    </div>
+    <!-- .container END -->
+    <div class="agency-banner-img-1">
+      <img
+        src="images/banner-dots.png"
+        data-scrollax="properties: { translateY: '25%' }"
+        alt=""
+      />
+    </div>
+    <div class="agency-banner-img-2">
+      <img src="images/bg-images/topbg_02.png" alt="" />
+    </div>
+  </section>
+  <!-- end agency banner section -->
+
     <!-- parallax service strart -->
-    <section class="parallax-service-area banner-area-wraper">
-      <div class="swiper-container parallax-service" data-direction="vertical">
-        <div class="swiper-wrapper">
-          <div class="swiper-slide banner-area-wraper">
-            <div class="single-service serviceBg">
+    <section class="banner-area-wraper">
+      <div class="clearfix">
+        <div class="review-slider owl-carousel">
+          <div class="item">
+            <div class="single-service autoHeight serviceBg">
               <div class="container">
                 <div class="row">
                   <div class="col-lg-6">
@@ -151,8 +184,8 @@
             </div>
           </div>
 
-          <div class="swiper-slide">
-            <div class="single-service serviceBg">
+          <div class="item">
+            <div class="single-service autoHeight serviceBg">
               <div class="container">
                 <div class="row">
                   <div class="col-lg-6">
@@ -184,8 +217,8 @@
             </div>
           </div>
 
-          <div class="swiper-slide">
-            <div class="single-service serviceBg">
+          <div class="item">
+            <div class="single-service autoHeight serviceBg">
               <div class="container">
                 <div class="row">
                   <div class="col-lg-6">
@@ -219,8 +252,6 @@
             </div>
           </div>
         </div>
-        <!-- If we need pagination -->
-        <div class="swiper-pagination"></div>
       </div>
       <div class="banner-overlay-bg">
         <img
@@ -260,28 +291,6 @@
               <h3 class="main-title">Recent <em>Projects</em></h3>
             </div>
             <!-- .agency-section-title END -->
-          </div>
-          <div class="col-lg-6">
-            <div class="filter-button-wraper">
-              <ul
-                id="filters"
-                class="option-set clearfix main-filter"
-                data-option-key="filter"
-              >
-                <li>
-                  <a href="#" data-option-value="*" class="selected"
-                    >ALL PROJECTS</a
-                  >
-                </li>
-                <li>
-                  <a href="#" data-option-value=".item1">TYPE OF WORKS</a>
-                </li>
-                <li>
-                  <a href="#" data-option-value=".item2">TYPE OF CLIENTS</a>
-                </li>
-              </ul>
-            </div>
-            <!-- .filter-button-wraper END -->
           </div>
         </div>
         <!-- .row end -->
@@ -394,222 +403,6 @@
       <!-- .container END -->
     </section>
     <!-- agency cases section end -->
-
-    <!-- language switcher strart -->
-    <!-- xs modal -->
-    <div class="zoom-anim-dialog mfp-hide modal-language" id="modal-popup-1">
-      <div class="modal-dialog modal-lg">
-        <div class="modal-content">
-          <div class="language-content">
-            <p>Switch The Language</p>
-            <ul class="flag-lists">
-              <li>
-                <a href="#"
-                  ><img src=" images/006-united-states.svg" alt="" /><span
-                    >English</span
-                  ></a
-                >
-              </li>
-              <li>
-                <a href="#"
-                  ><img src=" images/002-canada.svg" alt="" /><span
-                    >English</span
-                  ></a
-                >
-              </li>
-              <li>
-                <a href="#"
-                  ><img src=" images/003-vietnam.svg" alt="" /><span
-                    >Vietnamese</span
-                  ></a
-                >
-              </li>
-              <li>
-                <a href="#"
-                  ><img src=" images/004-france.svg" alt="" /><span
-                    >French</span
-                  ></a
-                >
-              </li>
-              <li>
-                <a href="#"
-                  ><img src=" images/005-germany.svg" alt="" /><span
-                    >German</span
-                  ></a
-                >
-              </li>
-            </ul>
-          </div>
-        </div>
-      </div>
-    </div>
-    <!-- End xs modal --><!-- end language switcher strart -->
-
-    <!-- search panel strart -->
-    <!-- xs modal -->
-    <div class="zoom-anim-dialog mfp-hide modal-searchPanel" id="modal-popup-2">
-      <div class="modal-dialog modal-lg">
-        <div class="modal-content">
-          <div class="xs-search-panel">
-            <form action="#" method="POST" class="xs-search-group">
-              <input
-                type="search"
-                class="form-control"
-                name="search"
-                id="search"
-                placeholder="Search"
-              />
-              <button type="submit" class="search-button">
-                <i class="icon icon-search"></i>
-              </button>
-            </form>
-          </div>
-        </div>
-      </div>
-    </div>
-    <!-- End xs modal --><!-- end search panel strart -->
-
-    <!-- offset cart strart -->
-    <!-- sidebar cart item -->
-    <div class="xs-sidebar-group cart-group">
-      <div class="xs-overlay black-bg"></div>
-      <div class="xs-sidebar-widget">
-        <div class="sidebar-widget-container">
-          <div class="widget-heading media">
-            <div class="media-body">
-              <a href="#" class="close-side-widget">
-                X
-              </a>
-            </div>
-          </div>
-          <div class="xs-empty-content">
-            <h3 class="widget-title">Shopping cart</h3>
-            <h4 class="xs-title">No products in the cart.</h4>
-            <p class="empty-cart-icon">
-              <i class="icon icon-shopping-cart"></i>
-            </p>
-            <p class="xs-btn-wraper">
-              <a class="btn btn-primary" href="shop.html">Return To Shop</a>
-            </p>
-          </div>
-        </div>
-      </div>
-    </div>
-    <!-- END sidebar cart item -->
-    <!-- END offset cart strart -->
-
-    <!-- offset cart strart -->
-    <!-- sidebar cart item -->
-    <div class="xs-sidebar-group info-group">
-      <div class="xs-overlay black-bg"></div>
-      <div class="xs-sidebar-widget">
-        <div class="sidebar-widget-container">
-          <div class="widget-heading">
-            <a href="#" class="close-side-widget">
-              <i class="icon icon-cross"></i>
-            </a>
-          </div>
-          <div class="sidebar-textwidget">
-            <div class="sidebar-logo-wraper">
-              <a href="index.html">
-                <img src=" images/color-logo.png" alt="sidebar logo" />
-              </a>
-            </div>
-            <p>
-              Far far away, behind the word moun tains, far from the countries
-              Vokalia and Consonantia, there live the blind texts. Separated
-              they live in Bookmarksgrove right at the coast of
-            </p>
-            <ul class="sideabr-list-widget">
-              <li>
-                <div class="media">
-                  <div class="d-flex">
-                    <img src=" images/location.png" alt="" />
-                  </div>
-                  <div class="media-body">
-                    <p>759 Pinewood Avenue</p>
-                    <span>Marquette, Michigan</span>
-                  </div>
-                </div>
-                <!-- address 1 -->
-              </li>
-              <li>
-                <div class="media">
-                  <div class="d-flex">
-                    <img src=" images/mail.png" alt="" />
-                  </div>
-                  <div class="media-body">
-                    <a href="mailto:info@domain.com">info@domain.com</a>
-                    <span>Online Support</span>
-                  </div>
-                </div>
-                <!-- address 1 -->
-              </li>
-              <li>
-                <div class="media">
-                  <div class="d-flex">
-                    <img src=" images/phone.png" alt="" />
-                  </div>
-                  <div class="media-body">
-                    <a href="tel:906-624-2565">906-624-2565</a>
-                    <span>Mon-Fri 8am-5pm</span>
-                  </div>
-                </div>
-                <!-- address 1 -->
-              </li>
-            </ul>
-            <!-- .sideabr-list-widget -->
-            <div class="subscribe-form-wraper">
-              <p>Get Subscribed!</p>
-              <form action="#" method="POST" class="subscribe-form">
-                <label for="sub-input"></label>
-                <div class="form-group">
-                  <input
-                    type="email"
-                    name="email"
-                    id="sub-input"
-                    placeholder="Enter your mail here"
-                    class="form-control"
-                  />
-                  <button class="sub-btn" type="submit">
-                    <i class="icon icon-arrow-right"></i>
-                  </button>
-                </div>
-              </form>
-            </div>
-            <ul class="social-list version-2">
-              <li>
-                <a href="#" class="facebook"><i class="fa fa-facebook"></i></a>
-              </li>
-              <li>
-                <a href="#" class="twitter"><i class="fa fa-twitter"></i></a>
-              </li>
-              <li>
-                <a href="#" class="linkedin"><i class="fa fa-linkedin"></i></a>
-              </li>
-              <li>
-                <a href="#" class="instagram"
-                  ><i class="fa fa-instagram"></i
-                ></a>
-              </li>
-              <li>
-                <a href="#" class="vimeo"><i class="fa fa-vimeo"></i></a>
-              </li>
-            </ul>
-            <!-- .social-list -->
-            <div class="text-center">
-              <a
-                href="https://themeforest.net/user/xpeedstudio/portfolio"
-                class="btn btn-primary"
-                >Purchase Now</a
-              >
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <!-- END sidebar widget item -->
-    <!-- END offset cart strart -->
 
     <!-- footer section start -->
     <footer class="xs-footer-section footer-style3">
@@ -762,6 +555,7 @@
     <script src=" js/jquery.parallax.js"></script>
     <script src=" js/skrollr.min.js"></script>
     <script src=" js/shuffle-letters.js"></script>
+    <script src=" js/owl.carousel.min.js"></script>
     <script src=" js/main.js"></script>
     <!-- End js file -->
   </body>
