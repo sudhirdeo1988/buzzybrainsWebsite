@@ -18,6 +18,7 @@
     <link rel="stylesheet" href="css/animate.css" />
     <link rel="stylesheet" href="css/iconfont.css" />
     <link rel="stylesheet" href="css/owl.carousel.min.css" />
+    <link rel="stylesheet" href="css/magnific-popup.css">
     <link rel="stylesheet" href="css/plugins.css" />
     <link rel="stylesheet" href="css/style.css" />
     <link rel="stylesheet" href="css/responsive.css" />
@@ -321,7 +322,11 @@
                 with feasible tools, technologies, and frameworks.
               </p>
               <div class="btn-wraper">
-                <a href="#" class="btn btn-primary btn-gradient3"
+                <a
+                  href="javascript:void(0)"
+                  class="btn btn-primary btn-gradient3"
+                  data-toggle="modal"
+                  data-target="#contactModal"
                   >Talk to Expert</a
                 >
               </div>
@@ -380,7 +385,10 @@
           <div class="col-lg-8 mx-auto">
             <div class="agency-section-title text-center">
               <h3 class="sub-title">TESTIMONIALS</h3>
-              <h4 class="main-title">30+ Startups are working with BuzzyBrains to build their custom software products</h4>
+              <h4 class="main-title">
+                30+ Startups are working with BuzzyBrains to build their custom
+                software products
+              </h4>
               <span
                 class="watermark-title"
                 data-scrollax="properties: { translateY: '-100px' }"
@@ -535,7 +543,6 @@
     </section>
     <!-- agency review area section end -->
 
-
     <!-- agency parallax area section -->
     <div class="xs-section-padding">
       <div class="container">
@@ -683,7 +690,7 @@
             <div class="agency-intro-video">
               <img src="images/video-1.jpg" alt="video image" />
               <a
-                href="https://www.youtube.com/watch?v=BJq4d1-lHq8"
+                href="https://www.youtube.com/watch?v=MFMAZZOdWAM"
                 class="xs-video-popup video-content btn-gradient"
               >
                 <i class="icon icon-play2"></i>
@@ -790,7 +797,6 @@
     </div>
     <!- horizontal timeline section end -->
 
-
     <!-- agency review area section -->
     <section
       class="xs-section-padding agency_review_section bg-wall"
@@ -801,7 +807,7 @@
         <div class="row">
           <div class="col-lg-8 mx-auto">
             <div class="agency-section-title text-center">
-                <h3 class="sub-title">PORTFOLIOS</h3>
+              <h3 class="sub-title">PORTFOLIOS</h3>
               <h4 class="main-title">Our featured works</h4>
               <span
                 class="watermark-title"
@@ -816,7 +822,6 @@
         <div class="row">
           <div class="col-md-11 mx-auto">
             <div class="review-slider owl-carousel c-fullWidth c-portSlider">
-
               <div class="review-content text-center">
                 <i class="fa fa-quote-left watermark-icon"></i>
                 <div class="row">
@@ -832,7 +837,7 @@
                   <div class="col-md-6 text-left">
                     <div class="portSection">
                       <h3 class="portHeading">
-                        Media & entertainment platform 
+                        Media & entertainment platform
                       </h3>
                       <p>
                         <em>
@@ -866,19 +871,16 @@
                       </h3>
                       <p>
                         <em>
-                            Organize learning platform, it is designed and 
-                            curated to suit the digital needs of modern Tuitions 
-                            and Colleges. Bringing the exact classroom experience 
-                            to your mobile phones with the ease of automation.
-
+                          Organize learning platform, it is designed and curated
+                          to suit the digital needs of modern Tuitions and
+                          Colleges. Bringing the exact classroom experience to
+                          your mobile phones with the ease of automation.
                         </em>
                       </p>
                     </div>
                   </div>
                 </div>
               </div>
-
-
             </div>
             <!-- .review-slider END -->
           </div>
@@ -1054,7 +1056,7 @@
                     <form>
                       <div class="form-group">
                         <div class="materialGroup">
-                          <input type="text" required>
+                          <input type="text" required />
                           <span class="bar"></span>
                           <label>Name</label>
                         </div>
@@ -1080,12 +1082,18 @@
                       <div class="row form-group">
                         <div class="col-6">
                           <div class="form-check c-custCheck">
-                            <input type="checkbox" class="form-check-input" id="exampleCheck1">
-                            <label class="form-check-label" for="exampleCheck1">Send NDA</label>
+                            <input
+                              type="checkbox"
+                              class="form-check-input"
+                              id="exampleCheck1"
+                            />
+                            <label class="form-check-label" for="exampleCheck1"
+                              >Send NDA</label
+                            >
                           </div>
                         </div>
                         <div class="col-6 pull-right">
-                          <input type="file" class="custom-file-input">
+                          <input type="file" class="custom-file-input" />
                         </div>
                       </div>
 
@@ -1118,11 +1126,100 @@
                     </div>
                     <div class="quote_dtls">
                       <img src="./images/SVG/icon-confidential.svg" />
-                      We keep confidentiality with all of our clients by signing NDA
+                      We keep confidentiality with all of our clients by signing
+                      NDA
                     </div>
                   </div>
                 </div>
               </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Contact Us Modal -->
+    <div
+      class="modal fade c-cleanModal"
+      id="contactModal"
+      tabindex="-1"
+      role="dialog"
+      aria-labelledby="contactModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-lg" role="document">
+        <div class="modal-content">
+          <div class="modal-body">
+            <div class="section-title-style3">
+              <div class="agency-section-title text-center">
+                <h3 class="main-title">Send Us <em>Message</em></h3>
+              </div>
+            </div>
+            <div class="from-wraper">
+              <form
+                action="#"
+                id="xs-contact-form"
+                class="contact-form"
+                method="post"
+              >
+                <div class="row">
+                  <div class="col-lg-6">
+                    <input
+                      type="text"
+                      placeholder="Name"
+                      name="name"
+                      id="xs_contact_name"
+                      class="form-control"
+                    />
+                  </div>
+                  <div class="col-lg-6">
+                    <input
+                      type="email"
+                      placeholder="Email"
+                      name="email"
+                      id="xs_contact_email"
+                      class="form-control"
+                    />
+                  </div>
+                  <div class="col-lg-6">
+                    <input
+                      type="text"
+                      placeholder="Phone"
+                      name="Phone"
+                      id="xs_contact_Phone"
+                      class="form-control"
+                    />
+                  </div>
+                  <div class="col-lg-6">
+                    <input
+                      type="text"
+                      placeholder="Subject"
+                      name="subject"
+                      id="xs_contact_subject"
+                      class="form-control"
+                    />
+                  </div>
+                </div>
+
+                <textarea
+                  name="massage"
+                  id="x_contact_massage"
+                  placeholder="Your Message..."
+                  class="form-control"
+                  cols="30"
+                  rows="10"
+                ></textarea>
+                <input
+                  type="submit"
+                  name="submit"
+                  id="xs_contact_submit"
+                  class="btn btn-primary btn-gradient3"
+                  value="Submit"
+                />
+                <button class="btn btn-light" data-dismiss="modal">
+                  Cancel
+                </button>
+              </form>
             </div>
           </div>
         </div>
