@@ -543,6 +543,37 @@
     </section>
     <!-- agency review area section end -->
 
+
+    <!-- agency creative comunication section -->
+    <section class="agency-creative-comunication padTopBtm-50">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6">
+            <div class="creative-comunication-content nopad">
+              <p>
+                Tell us your requirement and our experts will connect the dots
+                with feasible tools, technologies, and frameworks.
+              </p>
+            </div>
+          </div>
+          <div class="col-md-6 text-right">
+            <div class="btn-wraper">
+              <a
+                href="javascript:void(0)"
+                class="btn btn-primary btn-gradient3"
+                data-toggle="modal"
+                data-target="#contactModal"
+                >Talk to Expert</a
+              >
+            </div>
+          </div>
+        </div>
+        <!-- .row END -->
+      </div>
+      <!-- .container END -->
+    </section>
+    <!-- end agency creative comunication section -->
+
     <!-- agency parallax area section -->
     <div class="xs-section-padding">
       <div class="container">
@@ -1199,16 +1230,28 @@
                       class="form-control"
                     />
                   </div>
+                  <div class="col-lg-6">
+                    <select name="select" class="xs-select">
+                      <option selected>Short by</option>
+                      <option value="popularity">Sort by popularity</option>
+                      <option value="rating">Sort by average rating</option>
+                      <option value="newness">Sort by newness</option>
+                      <option value="hightolow">Sort by price: high to low</option>
+                      <option value="lowtohigh">Sort by price: low to high</option>
+                  </select>
+                  </div>
+                  <div class="col-12">
+                    <textarea
+                    name="massage"
+                    id="x_contact_massage"
+                    placeholder="Your Message..."
+                    class="form-control"
+                    rows="3"
+                  ></textarea>
+                  </div>
                 </div>
 
-                <textarea
-                  name="massage"
-                  id="x_contact_massage"
-                  placeholder="Your Message..."
-                  class="form-control"
-                  cols="30"
-                  rows="10"
-                ></textarea>
+
                 <input
                   type="submit"
                   name="submit"
