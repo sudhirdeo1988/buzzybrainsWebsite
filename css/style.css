@@ -7359,6 +7359,11 @@ blockquote::before {
   transition: all 0.4s ease;
   white-space: normal;
 }
+.btn.btn-sm{
+  padding: 10px 20px;
+  height: 42px;
+  line-height: 18px;
+}
 .btn.btn-secondary {
   background-color: #4285f4;
   -webkit-box-shadow: none;
@@ -7384,6 +7389,7 @@ blockquote::before {
 .btn.btn-primary {
   background-color: #4643cd;
 }
+
 .btn.btn-primary:hover {
   background-color: #109fb2;
 }
@@ -10223,4 +10229,23 @@ input[type="number"] {
 .select-options,
 .select-options::before {
   background-color: #1868dd;
+}
+.footerLbl{
+  display: block;
+  margin: 0 0 10px;
+  font-weight: 500;
+  color: #f9ad1b;
+  font-size: 12px;
+}
+.c-alert{
+position: fixed;
+padding: .75rem 1.25rem;
+margin-bottom: 1rem;
+border: 1px solid transparent;
+border-radius: .25rem;
+z-index: 99;
+width: 500px;
+left: 50%;
+margin-left: -250px;
+bottom: 50px;
 }
